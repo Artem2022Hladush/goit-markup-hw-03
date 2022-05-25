@@ -58,6 +58,7 @@ h2, h3, p {
     margin: 0;
     padding: 0;
 }
+/* header */
 .logo {
     color: var(--title-text-color);
     font-family: Raleway, sans-serif;
@@ -70,7 +71,7 @@ h2, h3, p {
     color: var(--accent-color);
 }
 
-/* header */
+
 .header {
     border-bottom: 1px solid #ECECEC;
 }
@@ -180,7 +181,7 @@ margin-bottom: 50px;
 }
 
 .feautere-list .item {
-    width: 270px;
+    /* width: 270px; */
     margin-left: 30px;
     margin-bottom: 30px;
 }
@@ -196,7 +197,28 @@ margin-bottom: 50px;
 .feautere-list .text {
     line-height: 1.71;
 }
+
+/* work-list */
+
+.work-list {
+    display: flex;
+
+}
+.work-list .item:not(:last-child){
+    margin-right: 30px;
+}
+
 /* Team*/
+
+.team {
+    display: flex;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+.team .item {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
 
 .section-team {
     background-color: var(--secondary-bg-color);
@@ -251,12 +273,14 @@ margin-bottom: 50px;
     text-decoration: none;
     margin-bottom: 20px;
 }
-.adress {
+.adress { 
+    display: block;
+    margin-top: 20px;
     color: var(--primary-white-color);
     line-height: 1.71;
     text-decoration: none;
     font-style: normal;
-    margin-bottom: 9px;
+    
 }
 .adress:hover,
 .adress:focus {
@@ -273,6 +297,10 @@ margin-bottom: 50px;
 .footer-list .link:hover,
 .footer-list .link:focus {
     color: var(--accent-color);
+}
+
+.footer-list .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 /* Portfolio */
@@ -309,6 +337,13 @@ margin-bottom: 50px;
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     
+} 
+
+/* project */
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
 }
 .project .title {
     color: var(--title-text-color);
