@@ -33,7 +33,7 @@ h2, h3, p {
     margin: 0;
 }
 
-
+/* Утилиты */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -109,7 +109,7 @@ h2, h3, p {
     text-decoration: none;
 
 }
-.site-nav .link.current{
+.site-nav .link .current{
     color: var(--accent-color);
 }
 
@@ -175,13 +175,14 @@ margin-bottom: 50px;
 /* feautere */
 .feautere-list {
     display: flex;
-
     margin-left: -30px;
     margin-bottom: -30px;
 }
 
-.feautere-list .item {
-    /* width: 270px; */
+.feautere-list > .item {
+    /* width: calc((100% - 90px) / 3 ); */
+    /* width: calc(25% - 30px); */
+    width: 270px;
     margin-left: 30px;
     margin-bottom: 30px;
 }
@@ -214,10 +215,17 @@ margin-bottom: 50px;
     display: flex;
     margin-left: -30px;
     margin-bottom: -30px;
+
+    
 }
-.team .item {
+.team > .item {
+    /* width: calc((100% - 90px) / 3); */
+    width: 270px;
     margin-left: 30px;
     margin-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+
 }
 
 .section-team {
@@ -231,10 +239,12 @@ margin-bottom: 50px;
     font-size: 16px;
     line-height: 1.16; 
     margin-bottom: 10px; 
+    text-align: center;
 }
 .team .text {
     font-size: 16px;
     line-height: 1.16;
+    text-align: center;
 }
 /* button */
 .hero-btn {
@@ -248,7 +258,6 @@ margin-bottom: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    /* display: flex; */
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -271,7 +280,7 @@ margin-bottom: 50px;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    margin-bottom: 20px;
+    
 }
 .adress { 
     display: block;
