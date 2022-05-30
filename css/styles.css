@@ -24,8 +24,13 @@ body {
     font-size: 14px;
 }
 
-h2, h3, p {
+h1, h2, h3, p {
     margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Утилиты */
@@ -77,6 +82,7 @@ h2, h3, p {
     display: flex;
 }
 
+
 /* main-nav */
 .main-nav {
     display: flex;
@@ -105,7 +111,7 @@ h2, h3, p {
 
 }
 
-.site-nav .link .current{
+.site-nav  .current{
     color: var(--accent-color);
 }
 
@@ -151,7 +157,6 @@ h2, h3, p {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-top: 0;
     margin-bottom: 30px;
 }
 
@@ -159,6 +164,9 @@ h2, h3, p {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.top {
+    padding-top: 0px;
 }
 
 .section-title {
@@ -201,6 +209,7 @@ h2, h3, p {
     display: flex;
 }
 
+
 .work-list .item:not(:last-child){
     margin-right: 30px;
 }
@@ -208,22 +217,23 @@ h2, h3, p {
 /* Team*/
 .team {
     display: flex;
-    margin-left: -30px;
-    margin-bottom: -30px;   
+    margin-left: -30px; 
+}
+
+.team .staff {
+    margin-bottom: 30px;
 }
 
 .team > .item {
+    background-color: var(--primary-white-color);
     width: 270px;
     margin-left: 30px;
-    margin-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.section-team {
+.bg {
     background-color: var(--secondary-bg-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .team-title {
@@ -320,6 +330,7 @@ h2, h3, p {
     justify-content: center;
 }
 
+
 .filter .item:not(:last-child) {
     margin-right: 8px;
 }
@@ -331,8 +342,7 @@ h2, h3, p {
 
 
     color: var(--title-text-color);
-    background: var(--secondary-bg-color);
-    background-color: var(--primary-white-color); 
+    background-color: var(--primary-white-color);
 
     font-weight: 500;
     font-size: 16px;
@@ -376,6 +386,7 @@ h2, h3, p {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 
 }
 
@@ -383,5 +394,12 @@ h2, h3, p {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+}
+
+.port {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    background-color: var(--primary-white-color);
 }
 
